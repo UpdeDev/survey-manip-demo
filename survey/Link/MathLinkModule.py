@@ -1,4 +1,5 @@
 from Link.LinkModule import Link
+import math
 
 class MathLink(Link):
 
@@ -15,19 +16,37 @@ class MathLink(Link):
                     answer_values.append(int(answers[answer_id]))
         return answer_values
 
+    def _average(self, values):
+        sum = 0
+        for value in values:
+            sum = sum + value
+        return sum / len(values)
+
     def _average_answers(self, survey):
         answers = self._extract_answers(survey)
         if len(answers) == 0:
             return 0
-        sum = 0
+        survey["answer_average"] = self._average(answers)
+        return survey
+
+    def _std_dev_answers(self, survey):
+        answers = self._extract_answers(survey)
+        if len(answers) == 0:
+            return 0
+        mean = self._average(answers)
+        sum_of_squares = 0
         for answer in answers:
-            sum = sum + answer
-        survey["answer_average"] = sum / len(answers)
+            delta = answer - mean
+            square = delta * delta
+            sum_of_squares = sum_of_squares + square
+        variance = sum_of_squares / len(answers)
+        survey["answer_std_dev"] = math.sqrt(variance)
         return survey
 
     def _process(self, survey):
         operation_switch = {
-            "average_answers": self._average_answers
+            "average_answers": self._average_answers,
+            "std_dev_answers": self._std_dev_answers
         }
         opfunc = operation_switch.get(self.operation)
         if(opfunc == None):
