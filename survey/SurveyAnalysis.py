@@ -1,23 +1,25 @@
-from Link import FilterLink, MathLink
+from Link.DropGroupLinkModule import DropGroupLink
+from Link.MathLinkModule import MathLink
 import copy
+import json
 
 class Analysis:
 
     def __init__(self, survey):
-        self.golden = copy.deepcopy(survey)
-        self.working = copy.deepcopy(survey)
+        loaded = json.loads(survey)
+        self.working = copy.deepcopy(loaded)
         self.queue = []
-
+ 
     def digest(self):
         for item in self.queue:
-            self.working = item.process(self.working)
+            self.working = item._process(self.working)
         return self.working
 
-    def filter(self, filters):
-        self.queue.append(FilterLink(filters))
+    def drop_question_groups(self, groups):
+        self.queue.append(DropGroupLink(groups))
         return self
-
-    def math(self, targets, operations):
-        self.queue.append(MathLink(targets, operations))
+ 
+    def math(self, operations):
+        self.queue.append(MathLink(operations))
         return self
 
