@@ -1,0 +1,109 @@
+{
+  "surveryInfo": {
+    "lastSurveyEdit": "2019-02-27T15:48:31Z",
+    "sampleSources": ["1"],
+    "groups": [],
+    "closedDate": "2019-02-27T15:48:31Z",
+    "createdBy": {
+      "email": "rwilson@directionsresearch.com",
+      "name": "Rachel Wilson",
+      "id": 38530
+    },
+    "questions": 77,
+    "owner": 4644,
+    "total": 7806,
+    "compat": 141,
+    "archived": false,
+    "clickthrough": 8370,
+    "lastQuotaEdit": "2019-02-27T15:38:39Z",
+    "medianQtime": 707,
+    "state": "closed",
+    "dateLaunched": "2019-02-20T21:06:34Z",
+    "type": 1,
+    "today": 0,
+    "finishTime": "2019-02-27T16:44:03Z",
+    "description": "",
+    "tags": ["R2 Scale", "Crosstalk", "RJR", "Directions Research"],
+    "usesLogic": false,
+    "myAccess": null,
+    "averageQtime": 870,
+    "otherLanguages": [],
+    "qualified": 1118,
+    "myEdit": null,
+    "lastAccessBy": {
+      "email": "lcollins@directionsresearch.com",
+      "name": "Leslie Collins",
+      "id": 38527
+    },
+    "startTime": "2019-02-20T21:24:54Z",
+    "active": false,
+    "path": "selfserve/175d/190234",
+    "hasProjectParameters": false,
+    "matched": {},
+    "lang": ["english", "English (USA)"],
+    "lastEditBy": null,
+    "isCATI": false,
+    "lastEdit": null,
+    "hasDashboard": false,
+    "lastAccess": "2019-05-09T17:23:51Z",
+    "createdOn": "2019-02-19T19:10:30Z",
+    "title": "28172 - RJR - Camel Rich Opportunity Assessment",
+    "favorite": false,
+    "hasSavedReport": false,
+    "directory": "Directions Research",
+    "accessed": null
+  },
+  "questionGroup": {
+    "Rando": {
+      "questions": {
+        "Rando": {
+          "vgroup": "Rando",
+          "qtitle": "Random Code - for added security",
+          "colTitle": null,
+          "title": "Random Code - for added security",
+          "rowTitle": null,
+          "label": "Rando",
+          "answers": {
+            "1xcqjp2kkkkvbt9t": "j4l00m2kyt8ervxqmih7u6f2w",
+            "ayzhvnc6e7219h6v": "j4l00m2kyt8ervxqmih7u6f2w",
+            "dx26y3p7ff5fzjut": "j4l00m2kyt8ervxqmih7u6f2w",
+            "9kvdq3m2rtpjnqj4": "j4l00m2kyt8ervxqmih7u6f2w",
+            "zn7jymem55w0fjey": "j4l00m2kyt8ervxqmih7u6f2w",
+            "ddw68tha8a38vq8s": "j4l00m2kyt8ervxqmih7u6f2w",
+            "8km816ectspnv1bd": "j4l00m2kyt8ervxqmih7u6f2w",
+            "5g56fx2zhcv989g9": "j4l00m2kyt8ervxqmih7u6f2w",
+            "whyb721nvztsmcf3": "j4l00m2kyt8ervxqmih7u6f2w",
+            "e22uucp8gq55dw0t": "j4l00m2kyt8ervxqmih7u6f2w"
+          },
+          "row": null,
+          "type": "text",
+          "col": null,
+          "qlabel": "Rando"
+        }
+      }
+    },
+    "vq5_4Rank": {
+      "questions": {
+        "vq5_4Rankr2": {
+          "vgroup": "vq5_4Rank",
+          "qtitle": "Genuine",
+          "colTitle": null,
+          "title": "Marlboro - Genuine",
+          "rowTitle": "Marlboro",
+          "label": "vq5_4Rankr2",
+          "answers": {
+            "pe88kecxjchxqqgj": "2",
+            "zu7ucv8gju9vyjqt": "2",
+            "1xcqjp2kkkkvbt9t": "2",
+            "zfpsegcdgzd24g9a": "2",
+            "rffb5wmje0yfa78z": "1"
+          },
+          "row": "r2",
+          "type": "number",
+          "col": null,
+          "qlabel": "vq5_4Rank"
+        }
+      }
+    }
+  }
+}
