@@ -1,0 +1,1 @@
+[{"type": "DropGroupLink", "groups": ["Rando"]}, {"type": "MathLink", "operation": "average_answers"}, {"type": "MathLink", "operation": "std_dev_answers"}]

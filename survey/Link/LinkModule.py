@@ -5,3 +5,5 @@ class Link:
     @abstractmethod
     def _process(self, response): raise NotImplementedError
     
+    @abstractmethod
+    def _dump(self): raise NotImplementedError

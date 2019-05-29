@@ -9,3 +9,6 @@ class DropGroupLink(Link):
         for group in self.groups:
             del survey_groups[group]
         return survey
+    
+    def _dump(self):
+        return {'type': 'DropGroupLink', 'groups': self.groups}

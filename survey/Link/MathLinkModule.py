@@ -55,5 +55,8 @@ class MathLink(Link):
         response = opfunc(survey)
         return response
 
+    def _dump(self):
+        return {'type': 'MathLink', 'operation': self.operation}
+
     def __init__(self, operation):
         self.operation = operation
