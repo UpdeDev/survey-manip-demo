@@ -20,6 +20,4 @@ outfile.close()
 infile = open("dump.json", "r")
 queue = json.loads(infile.read())
 analysis = Analysis(input_str, SurveyAnalysis.extract_queue(queue))
-
 result = analysis.digest()
-print(result)

@@ -37,3 +37,4 @@ class Analysis:
         self.queue.append(MathLink(operations))
         return self
 
+
